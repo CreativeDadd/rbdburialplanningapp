@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rachael Bosede Daramola Burial Ceremony</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('/property2.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    h1, h2 {
+      color: #FF6B6B; /* Soft red color */
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 1);
+      color: aliceblue;
+    }
+
+    main {
+      padding-top: 80px; /* Adjust for fixed navbar height */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- Navigation -->
+  <nav class="bg-blue-900 text-white p-6 fixed w-full top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-3xl font-bold">RBD Burial Ceremony</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#internment" class="hover:text-gray-400">Internment</a>
+        <a href="#reception" class="hover:text-gray-400">Reception</a>
+        <a href="#security" class="hover:text-gray-400">Security</a>
+        <a href="#media" class="hover:text-gray-400">Media</a>
+      </div>
+      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none">
+        &#9776;
+      </button>
+    </div>
+    <div id="menu" class="hidden md:hidden flex-col items-center space-y-6 mt-4 text-xl">
+      <a href="#internment" class="hover:text-gray-400" onclick="toggleMenu()">Internment</a>
+      <a href="#reception" class="hover:text-gray-400" onclick="toggleMenu()">Reception</a>
+      <a href="#security" class="hover:text-gray-400" onclick="toggleMenu()">Security</a>
+      <a href="#media" class="hover:text-gray-400" onclick="toggleMenu()">Media</a>
+    </div>
+  </nav>
+
+  <main class="mt-20 max-w-6xl mx-auto p-6 space-y-12">
+    <!-- Header -->
+    <header class="bg-gray-900 bg-opacity-75 text-center p-10">
+      <h1 class="text-5xl font-bold">Burial Ceremony of Rachael Bosede Daramola</h1>
+      <p class="mt-4 text-lg">Planning Committee and Responsibilities</p>
+    </header>
+
+    <!-- Internment Unit -->
+    <section id="internment" class="bg-white bg-opacity-80 text-gray-900 p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Internment Unit</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Casket</li>
+        <li>Grave preparations (Land, digging, cementing, design)</li>
+        <li>Corpse logistics (ambulances)</li>
+        <li>Undertakers (casket bearers)</li>
+        <li>Clothing the corpse</li>
+        <li>Table and decorations arrangements for the service of songs</li>
+        <li>Interface with St. John Anglican Church, Ogbagi, and Christian Association of Nigeria (CAN)</li>
+      </ul>
+      <p class="mt-6 font-semibold text-xl bg-blue-900 text-white py-1 px-4 rounded-lg">Members in charge:</p>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Dr. Tope Daramola</li>
+        <li>Evangelist Modupe Hobbo</li>
+        <li>Pharmacist Femi Daramola (unit Co-ordinator)</li>
+        <li>Pastor Oluyemi Daramola</li>
+        <li>'Prof.' Nelson Daramola</li>
+        <li>Engr. Oyebola Daramola</li>
+      </ul>
+      <!-- Task List and Controls -->
+      <div class="mt-8">
+        <h3 class="text-2xl font-bold mb-4">Tasks</h3>
+        <button id="add-internment" class="bg-blue-600 text-white py-2 px-4 rounded-lg">Assign Task</button>
+        <ul id="internment-list" class="list-disc pl-6 mt-4 space-y-2 text-lg font-medium"></ul>
+      </div>
+    </section>
+
+    <!-- Reception and Entertainment Unit -->
+    <section id="reception" class="bg-white bg-opacity-80 text-gray-900 p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Reception and Entertainment Unit</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Estimate the total number of people we are feeding.</li>
+        <li>Determine the number of cows and chickens for meat.</li>
+        <li>Calculate the quantities of rice, semo vita, beans, salad ingredients, spices, etc.</li>
+        <li>Ensure we have all necessary items like pots, plates, take-away plates, spoons, cups, and other cutlery. Consider renting these ourselves instead of leaving them for the hired caterer, to save costs(my opinion).</li>
+        <li>Estimate the gallons of red oil and vegetable oil needed for all days.</li>
+        <li>Hire ushers and decoration people.</li>
+        <li>Hire catering people for cooking.</li>
+        <li>Discuss with and hire music artists for the reception/occasion.</li>
+        <li>Hire trumpet and drums (Boys Brigades) for mobilization music and dance.</li>
+        <li>Estimate the financial budget for drinks and the cooling system for the event, including water, soft drinks, wines, cooling trucks, etc.</li>
+        <li>Plan, implement, and enforce food and drink sharing for the ceremony to ensure a great experience.</li>
+      </ul>
+      
+      <p class="mt-6 font-semibold text-xl bg-blue-900 text-white py-1 px-4 rounded-lg" >Members in charge of the success of this aspect of the burial ceremony:</p>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Dr. Tope Daramola</li>
+        <li>Evangelist Modupe Hobbo(Unit Co-ordinator)</li>
+        <li>Evangelist Funke (Mum Lagos)</li>
+        <li>Mrs. Uche Daramola (Mummy USA)</li>
+        <li>Mrs. Comfort Daramola</li>
+        <li>Deaconess Adedamola Daramola (Mum Olorire)</li>
+        <li>Evangelist Bukola Oluyemi Daramola (Prophetess Akure)</li>
+        <li>Madam Victoria Ugochi Daramola (Mummy Todimu)</li>
+        <li>Madam Esther Daramola (Mummy Ayo, Lagos)</li>
+        <li>Madam Queen (Abuja)</li>
+      </ul>
+    
+      <p class="mt-4 text-red-600 font-bold">Note:</p>
+      <p class="pl-6 text-lg font-medium">Timing and accuracy are of great importance. Please ensure to get cost estimates for all items and human resources needed.</p>
+      
+      <p class="mt-4">Thank you,<br>Oyebola Daramola<br>Secretary, Planning Committee</p>
+    </section>
+
+    <!-- "Aso Ebi and Souvenir" section: -->
+    <section id="aso-ebi" class="bg-white bg-opacity-80 text-gray-900 p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Aso Ebi and Souvenir</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Choose the ceremony clothes uniform for wake keep, church service, and branded T-shirts for "IGBANGBA".</li>
+        <li>Select the best type of souvenir, including packaging and presentation styles, and ensure they are branded.</li>
+        <li>Design styles for sowing Aso Ebi and other ceremonial wear.</li>
+        <li>Budget and order Aso Ebi and souvenirs with adequate consideration for quality and cost.</li>
+        <li>Coordinate the distribution and sale of Aso Ebi and souvenirs, including point of contact for sales.</li>
+      </ul>
+      <p class="mt-6 font-semibold text-xl bg-blue-900 text-white py-1 px-4 rounded-lg">Members in charge:</p>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Mrs. Sola Olanrewaju (Co-ordinator)</li>
+        <li>Mrs. Florence Daramola (Assistant Co-ordinator)</li>
+        <li>Mrs. Adedamola Daramola (Assistant Co-ordinator)</li>
+        <li>Mrs. Deborah Adebiyi</li>
+        <li>Mrs. Jumoke Fadeyi</li>
+      </ul>
+    </section>
+
+    <!-- Contact Details -->
+    <section id="contact" class="bg-gray-800 bg-opacity-80 text-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="text-lg mb-4">For inquiries, reach out to the committee members:</p>
+      <ul class="list-disc pl-6 space-y-2 text-lg font-medium">
+        <li>Dr. Tope Daramola: <a href="tel:+2348123456789" class="text-blue-300 hover:underline">+234 812 345 6789</a></li>
+        <li>Evangelist Modupe Hobbo: <a href="tel:+2348123456789" class="text-blue-300 hover:underline">+234 812 345 6789</a></li>
+        <li>Pharmacist Femi Daramola: <a href="tel:+2348123456789" class="text-blue-300 hover:underline">+234 812 345 6789</a></li>
+      </ul>
+      <p class="mt-4">Email: <a href="mailto:info@example.com" class="text-blue-300 hover:underline">info@example.com</a></p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-6">
+    <p>&copy; 2024 Rachael Bosede Daramola Burial Ceremony. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+
+    function toggleMenu() {
+      document.getElementById('menu').classList.add('hidden');
+    }
+
+    // Load tasks from localStorage
+    function loadTasks() {
+      const tasks = JSON.parse(localStorage.getItem('internmentTasks')) || [];
+      const list = document.getElementById('internment-list');
+      list.innerHTML = '';
+      tasks.forEach(task => {
+        const taskItem = document.createElement('li');
+        taskItem.classList.add('flex', 'items-center', 'space-x-2');
+        taskItem.innerHTML = `
+          <input type="checkbox" class="form-checkbox" ${task.completed ? 'checked' : ''} />
+          <span class="flex-grow">${task.text}</span>
+          <button class="ml-2 text-red-500" onclick="deleteTask(this)">Delete</button>
+        `;
+        list.appendChild(taskItem);
+      });
+    }
+
+    function saveTasks(tasks) {
+      localStorage.setItem('internmentTasks', JSON.stringify(tasks));
+    }
+
+    // Handle task list for Internment Unit
+    document.getElementById('add-internment').addEventListener('click', function () {
+      let taskText = prompt('Enter a new task:');
+      if (taskText) {
+        let tasks = JSON.parse(localStorage.getItem('internmentTasks')) || [];
+        tasks.push({ text: taskText, completed: false });
+        saveTasks(tasks);
+        loadTasks();
+      }
+    });
+
+    function deleteTask(button) {
+      let passcode = prompt('Enter passcode to confirm deletion:');
+      if (passcode === '1234') { // Hardcoded passcode for demo purposes
+        let tasks = JSON.parse(localStorage.getItem('internmentTasks')) || [];
+        tasks = tasks.filter((_, index) => {
+          return !button.parentElement.textContent.includes(tasks[index].text);
+        });
+        saveTasks(tasks);
+        loadTasks();
+      } else {
+        alert('Incorrect passcode.');
+      }
+    }
+
+    // Mark task as completed
+    document.getElementById('internment-list').addEventListener('change', function (event) {
+      if (event.target.type === 'checkbox') {
+        let tasks = JSON.parse(localStorage.getItem('internmentTasks')) || [];
+        let index = Array.from(event.target.parentElement.parentElement.children).indexOf(event.target.parentElement);
+        tasks[index].completed = event.target.checked;
+        saveTasks(tasks);
+      }
+    });
+
+    // Initial load
+    loadTasks();
+  </script>
+</body>
+
+</html>
